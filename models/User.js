@@ -38,6 +38,8 @@ const UserSchema = new Schema(
 const User = model("User", UserSchema);
 
 // virtual to count the friends array
-UserSchema.virtual("friendCount").get(function () {
-  return;
-});
+// UserSchema.virtual("friendCount").get(function () {
+//   return;
+// });
+
+module.exports = User;
