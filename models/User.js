@@ -37,9 +37,9 @@ const UserSchema = new Schema(
 // creates the user model using the UserSchema
 const User = model("User", UserSchema);
 
-// virtual to count the friends array
-// UserSchema.virtual("friendCount").get(function () {
-//   return;
-// });
+virtual to count the friends array
+UserSchema.virtual("friendCount").get(function () {
+  return this.friends.length;
+});
 
 module.exports = User;
